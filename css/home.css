@@ -124,6 +124,27 @@
 }
 
 
+/* newsletter */
+
+.newsletter input {
+    border: none;
+    background-color: #556566;
+    padding: 10px;
+    color: white;
+    width: 300px;
+    max-width: 400px;
+}
+
+.newsletter input:focus {
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px 20px !important;
+    margin-top: -3px;
+}
+
+
 /* refferal */
 
 .referral h1 {
