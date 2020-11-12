@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+.header {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.header h6 span {
+    color: var(--dark-grey);
+}
+
+.fa-phone {
+    color: var(--light-green);
+}
+
+
+/* nav */
+
+.dropdown-menu {
+    background-color: var(--dark-green);
+}
+
+.dropdown-menu a {
+    color: var(--dark-grey)
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.navbar-brand img {
+    object-fit: contain;
+    height: 80px;
+}
+
+
+/* footer */
+
+footer .fa {
+    color: var(--light-green);
+    font-size: 1.5em;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover {
+    color: white;
+    cursor: pointer;
+}
