@@ -1,0 +1,63 @@
+// Header
+.header {
+  background-color: $dark-green;
+  color: white;
+
+  h6 span {
+    color: $dark-grey;
+  }
+  .fa-phone {
+    color: $light-green;
+  }
+}
+
+// Navbar
+nav {
+  .logo {
+    object-fit: contain;
+    width: 200px;
+  }
+
+  .navbar-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .active {
+    color: $light-green !important;
+  }
+  .active a {
+    color: $light-green !important;
+  }
+
+  .dropdown-menu {
+    background-color: $dark-green;
+  }
+
+  .dropdown-menu a {
+    color: $dark-grey;
+  }
+
+  .dropdown-item:hover {
+    background-color: transparent;
+  }
+
+  .navbar-brand img {
+    object-fit: contain;
+    height: 80px;
+  }
+}
+
+@media (max-width: $tablet) {
+  nav {
+    .navbar-nav {
+      max-height: 400px;
+      overflow-y: scroll;
+    }
+  }
+}
+
+@media (min-width: $sm-pc) {
+  .nav-btn {
+    font-size: 12px;
+  }
+}

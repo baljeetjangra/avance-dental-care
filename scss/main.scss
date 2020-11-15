@@ -1,0 +1,143 @@
+@import "./config";
+@import "./header";
+@import "./footer";
+
+// Home Page Style
+.hero {
+  color: $dark-green;
+  h1 span {
+    color: $light-green;
+  }
+  p {
+    text-shadow: none;
+  }
+  p span {
+    font-weight: bold;
+    color: $light-green !important;
+    text-shadow: $textShadow;
+  }
+}
+.first_slide {
+  height: 80vh;
+  background-image: url("../images/home_banner1.jpg");
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  text-shadow: $textShadow;
+
+  #{&}_content {
+    padding-top: 30vh;
+  }
+}
+.second_slide {
+  height: 80vh;
+  background-image: url("../images/home_banner2.jpg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  text-shadow: $textShadow;
+  #{&}_content {
+    padding-top: 30vh;
+  }
+  a {
+    text-shadow: none;
+  }
+}
+.third_slide {
+  height: 80vh;
+  background-image: url("../images/health.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: $textShadow;
+
+  #{&}_content {
+    padding-top: 30vh;
+  }
+  a {
+    text-shadow: none;
+  }
+  h1:last-child {
+    text-shadow: none;
+    width: fit-content;
+  }
+}
+
+// Our Mission
+.ourmission {
+  h2 {
+    color: $light-green;
+    font-family: "josefin-regular";
+  }
+}
+
+// Smile
+.smile {
+  h1 {
+    color: $light-green;
+    font-family: "josefin-regular";
+  }
+}
+
+//  Ratings
+.rating {
+  img {
+    object-fit: contain;
+    width: 50px;
+  }
+}
+
+// passion
+.passion {
+}
+
+// newsletter
+
+.newsletter {
+  input {
+    border: none;
+    background-color: #556566;
+    padding: 10px;
+    color: white;
+    // width: 300px;
+    // max-width: 400px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    padding: 10px 20px !important;
+    margin-top: -3px;
+    margin-left: -20px;
+  }
+}
+@media (min-width: $md-mobile) {
+  .newsletter {
+    button {
+      margin-left: -21px;
+      margin-top: -4px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .second_slide {
+    .second_slide_content {
+      padding-top: 20vh;
+    }
+  }
+  .newsletter {
+    input {
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: $sm-pc) {
+  .referralImg {
+    object-fit: contain;
+    height: 400px;
+  }
+}

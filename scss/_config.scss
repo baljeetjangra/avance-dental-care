@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// Colors
+$light-green: #adce60;
+$green: #698760;
+$dark-green: #2f4649;
+$black: #3c4f54;
+$grey: #f7f7f7;
+$dark-grey: #8d989a;
+
+// Media Queries
+$sm-mobile: 375px;
+$md-mobile: 425px;
+$tablet: 768px;
+$sm-pc: 1024px;
+
+//Extra
+$textShadow: 1px 1px black;
+
+.text-shadow {
+  text-shadow: $textShadow;
+}
+
+@font-face {
+  font-family: "josefin-bold";
+  src: url("../fonts/JosefinSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "josefin-light";
+  src: url("../fonts/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "josefin-regular";
+  src: url("../fonts/JosefinSans-Regular.ttf");
+}
+
+// Links
+
+a {
+  font-family: "josefin-bold";
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $light-green !important;
+}
+
+// Buttons
+
+.btn-green {
+  background-color: $light-green;
+  color: white !important;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 15px 20px !important;
+  font-family: "josefin-bold";
+  border-radius: 99px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 0 $light-green;
+}
+
+.btn-green:hover {
+  //   background-color: $dark-green;
+  box-shadow: inset 250px 0 0 0 $dark-green;
+  color: white !important;
+}
+
+.btn-box {
+  border-radius: unset !important;
+}
+
+// backgrounds
+
+.bg-grey {
+  background-color: $grey;
+}
+
+.bg-green {
+  background-color: $light-green;
+}
+
+.bg-dark-green {
+  background-color: $dark-green;
+}
+
+// text style
+.josefin-regular {
+  font-family: "josefin-regular";
+}
+
+.josefin-bold {
+  font-family: "josefin-bold";
+}
+
+.text-green {
+  color: $light-green;
+}
+
+.text-dark-green {
+  color: $dark-green;
+}
+
+.green-bar:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: $light-green;
+}
+
+dd {
+  font-family: "josefin-bold";
+}

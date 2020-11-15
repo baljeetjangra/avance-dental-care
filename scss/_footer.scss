@@ -1,0 +1,15 @@
+footer {
+  .fa {
+    color: $light-green;
+    font-size: 1.5em;
+  }
+  .fa-facebook:hover,
+  .fa-twitter:hover {
+    color: white;
+    cursor: pointer;
+  }
+  h3,
+  p {
+    font-family: "josefin-regular";
+  }
+}
