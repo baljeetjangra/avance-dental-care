@@ -99,6 +99,26 @@ dd {
   font-family: "josefin-bold";
 }
 
+input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+input::-ms-input-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
 .header {
   background-color: #2f4649;
   color: white;
@@ -304,5 +324,19 @@ footer p {
        object-fit: contain;
     height: 400px;
   }
+}
+
+.faq button {
+  text-decoration: none !important;
+  color: white;
+}
+
+.faq button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.faq button:hover {
+  color: #adce60;
 }
 /*# sourceMappingURL=main.css.map */

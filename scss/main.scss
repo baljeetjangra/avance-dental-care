@@ -141,3 +141,20 @@
     height: 400px;
   }
 }
+
+// dental implants page styling
+
+.faq {
+  button {
+    text-decoration: none !important;
+    color: white;
+  }
+  button:focus {
+    box-shadow: none;
+  }
+  button:hover {
+    color: $light-green;
+  }
+}
+
+// dental implants page styling end

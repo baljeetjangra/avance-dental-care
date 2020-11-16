@@ -118,3 +118,8 @@ a:hover {
 dd {
   font-family: "josefin-bold";
 }
+
+input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
