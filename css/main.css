@@ -9,6 +9,11 @@
   text-shadow: 1px 1px black;
 }
 
+.img-shadow {
+  -webkit-box-shadow: 2px 5px 15px black;
+          box-shadow: 2px 5px 15px black;
+}
+
 @font-face {
   font-family: "josefin-bold";
   src: url("../fonts/JosefinSans-Bold.ttf");
@@ -39,7 +44,7 @@ a:hover {
   color: white !important;
   font-weight: bold;
   font-size: 15px;
-  padding: 15px 20px !important;
+  padding: 12px 20px !important;
   font-family: "josefin-bold";
   border-radius: 99px;
   overflow: hidden;
@@ -50,8 +55,8 @@ a:hover {
 }
 
 .btn-green:hover {
-  -webkit-box-shadow: inset 250px 0 0 0 #2f4649;
-          box-shadow: inset 250px 0 0 0 #2f4649;
+  -webkit-box-shadow: inset 250px 0 0 0 #000;
+          box-shadow: inset 250px 0 0 0 #000;
   color: white !important;
 }
 
@@ -68,7 +73,7 @@ a:hover {
 }
 
 .bg-dark-green {
-  background-color: #2f4649;
+  background-color: #000;
 }
 
 .josefin-regular {
@@ -84,7 +89,7 @@ a:hover {
 }
 
 .text-dark-green {
-  color: #2f4649;
+  color: #000;
 }
 
 .green-bar:after {
@@ -119,8 +124,28 @@ input::placeholder {
   opacity: 0.5;
 }
 
+@media (max-width: 375px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 768px) {
+  iframe {
+    width: 200px;
+    height: 157px;
+  }
+}
+
+@media (min-width: 1024px) {
+  iframe {
+    width: 400px;
+    height: 315px;
+  }
+}
+
 .header {
-  background-color: #2f4649;
+  background-color: #000;
   color: white;
 }
 
@@ -151,7 +176,7 @@ nav .active a {
 }
 
 nav .dropdown-menu {
-  background-color: #2f4649;
+  background-color: #000;
 }
 
 nav .dropdown-menu a {
@@ -198,7 +223,7 @@ footer p {
 }
 
 .hero {
-  color: #2f4649;
+  color: #000;
 }
 
 .hero h1 span {

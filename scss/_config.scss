@@ -6,7 +6,8 @@
 // Colors
 $light-green: #adce60;
 $green: #698760;
-$dark-green: #2f4649;
+$dark-green: #000;
+// $dark-green: #2f4649;
 $black: #3c4f54;
 $grey: #f7f7f7;
 $dark-grey: #8d989a;
@@ -19,11 +20,13 @@ $sm-pc: 1024px;
 
 //Extra
 $textShadow: 1px 1px black;
-
+$imgShadow: 2px 5px 15px black;
 .text-shadow {
   text-shadow: $textShadow;
 }
-
+.img-shadow {
+  box-shadow: $imgShadow;
+}
 @font-face {
   font-family: "josefin-bold";
   src: url("../fonts/JosefinSans-Bold.ttf");
@@ -58,7 +61,7 @@ a:hover {
   color: white !important;
   font-weight: bold;
   font-size: 15px;
-  padding: 15px 20px !important;
+  padding: 12px 20px !important;
   font-family: "josefin-bold";
   border-radius: 99px;
   overflow: hidden;
@@ -122,4 +125,22 @@ dd {
 input::placeholder {
   color: white;
   opacity: 0.5;
+}
+@media (max-width: $sm-mobile) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: $md-mobile) and (min-width: $tablet) {
+  iframe {
+    width: 200px;
+    height: 157px;
+  }
+}
+@media (min-width: $sm-pc) {
+  iframe {
+    width: 400px;
+    height: 315px;
+  }
 }
