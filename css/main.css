@@ -55,8 +55,8 @@ a:hover {
 }
 
 .btn-green:hover {
-  -webkit-box-shadow: inset 250px 0 0 0 #000;
-          box-shadow: inset 250px 0 0 0 #000;
+  -webkit-box-shadow: inset 250px 0 0 0 #2f4649;
+          box-shadow: inset 250px 0 0 0 #2f4649;
   color: white !important;
 }
 
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .bg-dark-green {
-  background-color: #000;
+  background-color: #2f4649;
 }
 
 .josefin-regular {
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .text-dark-green {
-  color: #000;
+  color: #2f4649;
 }
 
 .green-bar:after {
@@ -124,6 +124,17 @@ input::placeholder {
   opacity: 0.5;
 }
 
+.dotted-bg::before {
+  content: "";
+  background: url("../images/dot.JPG");
+  position: absolute;
+  top: -40px;
+  right: 255px;
+  bottom: 150px;
+  left: -28px;
+  z-index: -1;
+}
+
 @media (max-width: 375px) {
   h1 {
     font-size: 35px;
@@ -145,7 +156,7 @@ input::placeholder {
 }
 
 .header {
-  background-color: #000;
+  background-color: #2f4649;
   color: white;
 }
 
@@ -176,7 +187,7 @@ nav .active a {
 }
 
 nav .dropdown-menu {
-  background-color: #000;
+  background-color: #2f4649;
 }
 
 nav .dropdown-menu a {
@@ -223,7 +234,7 @@ footer p {
 }
 
 .hero {
-  color: #000;
+  color: #2f4649;
 }
 
 .hero h1 span {

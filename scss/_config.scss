@@ -6,8 +6,8 @@
 // Colors
 $light-green: #adce60;
 $green: #698760;
-$dark-green: #000;
-// $dark-green: #2f4649;
+// $dark-green: #000;
+$dark-green: #2f4649;
 $black: #3c4f54;
 $grey: #f7f7f7;
 $dark-grey: #8d989a;
@@ -126,6 +126,26 @@ input::placeholder {
   color: white;
   opacity: 0.5;
 }
+.dotted-bg::before {
+  content: "";
+  background: url("../images/dot.JPG");
+  position: absolute;
+  top: -40px;
+  right: 255px;
+  bottom: 150px;
+  left: -28px;
+  z-index: -1;
+}
+// .dotted-bg::before {
+//   content: "";
+//   background: url("../images/dot.JPG");
+//   position: absolute;
+//   top: -40px;
+//   right: 250px;
+//   bottom: 250px;
+//   left: -25px;
+//   z-index: -1;
+// }
 @media (max-width: $sm-mobile) {
   h1 {
     font-size: 35px;
